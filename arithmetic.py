@@ -15,13 +15,17 @@ def divide(num1, num2):
     return total
 
 def square(num1):
-    return num1 * num1
+    total = num1 * num1
+    return total
 
 def cube(num1):
-    return num1 * num1 * num1
+    total = num1 * num1 * num1
+    return total
 
 def power(num1, num2):
-    return num1 ** num2
+    total = num1 ** num2
+    return total
 
 def mod(num1, num2):
-    return num1 % num2
+    total = num1 % num2
+    return total
