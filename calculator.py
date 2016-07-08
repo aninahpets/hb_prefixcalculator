@@ -31,7 +31,10 @@ while True:
             # print current_value
 #if user_input starts with "+", call add function and print output
     elif user_input[0] == "-":
-        print subtract(user_input[1], user_input[2])
+        subtract_value = user_input[1]
+        for i in range(2, len(user_input)):
+            subtract_value = subtract(subtract_value, user_input[i])
+        print subtract_value
 #if user_input starts with "-", call subtract function and print output
     elif user_input[0] == "*":
         multiply_value = 1
@@ -40,7 +43,10 @@ while True:
         print multiply_value        
 #if user_input starts with "*", call multiply function and print output
     elif user_input[0] == "/":
-        print divide(user_input[1], user_input[2])
+        divide_value = user_input[1]
+        for i in range(2, len(user_input)):
+            divide_value = divide(divide_value, user_input[i])
+        print divide_value    
 #if user_input starts with "/", call divide function and print routput
     elif user_input[0] == "square":
         print square(user_input[1])
@@ -49,7 +55,10 @@ while True:
         print cube(user_input[1])
 #if user_input starts with "cube", call cube function and print output
     elif user_input[0] == "power":
-        print power(user_input[1], user_input[2])
+        power_value = user_input[1]
+        for i in range(2, len(user_input)):
+            power_value = power(power_value, user_input[i])
+        print power_value   
 #if user_input starts with "power", call power function and print output
     elif user_input[0] == "mod":
         print mod(user_input[1], user_input[2])
