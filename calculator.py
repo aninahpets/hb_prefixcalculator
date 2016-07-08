@@ -17,6 +17,9 @@ while True:
 #splits user_input into separate strings in a single list - "tokenizes"
     for i in range(1,len(user_input)):
 #iterates through the list starting with index 1 (skipping operator)
+        if user_input[i].isdigit() == False:
+            print "Incorrect input - enter correct information."
+            continue
         user_input[i] = int(user_input[i])
 #changes type from string to integer
     if user_input[0] == "q":
